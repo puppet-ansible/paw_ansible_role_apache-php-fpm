@@ -10,4 +10,4 @@
     - proxy.load
     - proxy_fcgi.load
   notify: restart apache
-  when: ansible_os_family == 'Debian'
+  when: ansible_facts.os_family == 'Debian'
